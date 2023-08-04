@@ -5,8 +5,8 @@ import { InputNumber } from "components/InputNumber";
 import { Filter } from "components/ButtonAdd";
 import { ContactList } from "components/ContactList"; 
 import { useDispatch, useSelector } from "react-redux";
-import { addContacts } from "Redux/operations";
-import { selectContacts } from "Redux/selectors";
+import { addContacts } from "Redux/contacts/operations";
+import { selectContacts } from "Redux/contacts/selectors";
 
 export const Input = () => {
 
