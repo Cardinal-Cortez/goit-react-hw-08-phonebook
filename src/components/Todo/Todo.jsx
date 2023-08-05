@@ -1,5 +1,5 @@
 import { Number, Item, Name, ButtonDel } from "./styled";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { deleteContacts } from "Redux/contacts/operations";
 
@@ -21,7 +21,7 @@ export const Todo = ({ id, name, phone}) => {
   );
 };
 
-Todo.propTypes = {
-  name: PropTypes.string.isRequired,
-  phone: PropTypes.string.isRequired,
-};
+// Todo.propTypes = {
+//   name: PropTypes.string.isRequired,
+//   phone: PropTypes.string.isRequired,
+// };

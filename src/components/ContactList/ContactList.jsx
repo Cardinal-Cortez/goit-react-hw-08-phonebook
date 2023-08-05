@@ -2,14 +2,14 @@ import { Todo } from "components/Todo";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteContacts } from "Redux/contacts/operations";
 import { List } from "./styled";
-import PropTypes from "prop-types";
-import { filters } from "Redux/contacts/selectors";
+// import PropTypes from "prop-types";
+import { selectContacts } from "Redux/contacts/selectors";
 
 
 export const ContactList = () => {
 
   const dispatch = useDispatch();
-    const filter = useSelector(filters);
+    const filter = useSelector(selectContacts);
 
   return (
     <List>
@@ -25,15 +25,15 @@ export const ContactList = () => {
 };
 
 
-ContactList.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.oneOfType([
-        PropTypes.number,
-        PropTypes.string
-      ]).isRequired,
-      name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
+// ContactList.propTypes = {
+//   contacts: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.oneOfType([
+//         PropTypes.number,
+//         PropTypes.string
+//       ]).isRequired,
+//       name: PropTypes.string.isRequired,
+//       number: PropTypes.string.isRequired,
+//     })
+//   ).isRequired,
+// };

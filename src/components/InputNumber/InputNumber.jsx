@@ -1,5 +1,5 @@
 import { InputAddNumber } from './styled'
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 export const InputNumber = ({handleNumberChange, phone}) => {
 
@@ -18,7 +18,7 @@ export const InputNumber = ({handleNumberChange, phone}) => {
     );
 };
 
-InputNumber.propTypes = {
-    handleNumberChange: PropTypes.func.isRequired,
-    phone: PropTypes.string.isRequired,
-};
+// InputNumber.propTypes = {
+//     handleNumberChange: PropTypes.func.isRequired,
+//     phone: PropTypes.string.isRequired,
+// };

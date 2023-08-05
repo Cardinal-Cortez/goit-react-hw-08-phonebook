@@ -1,5 +1,5 @@
 import { InputAddName } from "./styled";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 export const InputName = ({handleNameChange, name}) => {
 
@@ -18,7 +18,7 @@ export const InputName = ({handleNameChange, name}) => {
     );
 };
 
-InputName.propTypes = {
-  handleNameChange: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-};
+// InputName.propTypes = {
+//   handleNameChange: PropTypes.func.isRequired,
+//   name: PropTypes.string.isRequired,
+// };
