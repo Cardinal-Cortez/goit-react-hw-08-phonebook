@@ -3,13 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteContacts } from "Redux/contacts/operations";
 import { List } from "./styled";
 // import PropTypes from "prop-types";
-import { selectContacts } from "Redux/contacts/selectors";
+import { filters } from "Redux/contacts/selectors";
 
 
 export const ContactList = () => {
 
   const dispatch = useDispatch();
-    const filter = useSelector(selectContacts);
+    const filter = useSelector(filters);
 
   return (
     <List>

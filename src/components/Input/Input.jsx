@@ -16,10 +16,10 @@ export const Input = () => {
   console.log(contacts);
   
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const handleNumberChange = (e) => {
-    setPhone(e.target.value);
+    setNumber(e.target.value);
   };
 
   const handleNameChange = (e) => {
@@ -38,9 +38,9 @@ const handleSubmit = (e) => {
     return;
   }
 
-  dispatch(addContacts({name, phone}));
+  dispatch(addContacts({name, number}));
   setName('');
-  setPhone('');
+  setNumber('');
   
 };
 
@@ -52,7 +52,7 @@ const handleSubmit = (e) => {
         <InputName handleNameChange={handleNameChange} name={name} />
         <InputNumber
           handleNumberChange={handleNumberChange}
-          phone={phone}
+          number={number}
         />
         <AddContact type="submit">Add Contact</AddContact>
       </ContactForm>

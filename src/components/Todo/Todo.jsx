@@ -3,7 +3,7 @@ import { Number, Item, Name, ButtonDel } from "./styled";
 import { useDispatch } from "react-redux";
 import { deleteContacts } from "Redux/contacts/operations";
 
-export const Todo = ({ id, name, phone}) => {
+export const Todo = ({ id, name, number}) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
@@ -14,7 +14,7 @@ export const Todo = ({ id, name, phone}) => {
     <ul>
       <Item>
         <Name>{name}</Name>
-        <Number>{phone}</Number>
+        <Number>{number}</Number>
         <ButtonDel onClick={handleDelete}>Delete</ButtonDel>
       </Item>
     </ul>
